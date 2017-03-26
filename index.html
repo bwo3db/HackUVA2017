@@ -13,26 +13,81 @@
     <video autoplay loop id="video" muted>
       <source src="Keyboard - 8246.mp4" type="video/mp4">
     </video>
+
     <div class="topbar" id="topbar">
-      <h1 class="title" id="title">Harassment in the Light</h1>
-      <h4 class="subtitle" id="subtitle">A HackUVA project, with <a  id="lk" href= "http://www.hackharassment.com/">HackHarassment</a></h2>
+      <div id=navLeft>
+        <ul class="nav">
+          <li id="about" onclick="dropTopBenzAbout()">About</li><li id="links" onclick="linksTab()">Links</li>
+        </ul>
+      </div>
+      <div class="titleMain" id="titleMain" >
+      <h1 id="title">Harassment in the <span id="special" class="lightx">Light</span></h1>
+      <h4  id="subtitle">A HackUVA2017 Project</h2>
+      </div>
+      <div id=navRight>
+          <ul class="ul">
+            <li id="statistics" onclick="statsTab()">Statistics</li><li id="intro" onclick="dropTopBenzIntro()">Intro</li>
+          </ul>
+      </div>
     </div>
     <div class="bottom-body">
-      <div id="leftContain">
-        <img id="firstMean" src="http://www.prankmenot.com/images/26-03-2017/RDBWSa.png"/>
-        <img id="thirdMean" src="http://www.prankmenot.com/images/26-03-2017/BhQVSL.png"/>
-      </div>
-      <div id="rightContain" onclick="dropTopBenz()">
-        <p class="buttontxt">Make an Impact</p>
-      </div>
-      <div id="left2Contain">
-        <img id="firstGood" src="http://www.prankmenot.com/images/26-03-2017/WFUYvK.png"/>
-        <img id="thirdGood" src="http://www.prankmenot.com/images/26-03-2017/Z28KFF.png"/>
-      </div>
-      <div id="right2Contain">
-        <h4 class="info1heading">Online Harassment</h1>
-        <p class="info1">The internet is an incredible platform for talking with friends, developing cool things, and for spending a vast number of hours watching Netflix. However, often people make rash decisions and post things that are incredibly harmful to others. Among 15-24 year old’s, suicide is the second highest ranking cause of death (Drapeau & McIntosh, 2015). This age group is particularly susceptible to online Harassment and its deadly effects. Use the internet as it should be. An area where we can interact freely without the fear of hateful personal attacks. Respect others the way that you would like to be respected.</p>
-      </div>
+      <span id="introScreen">
+        <div id="leftContain">
+          <img id="firstMean" src="http://www.prankmenot.com/images/26-03-2017/RDBWSa.png"/>
+          <img id="thirdMean" src="http://www.prankmenot.com/images/26-03-2017/BhQVSL.png"/>
+        </div>
+        <div id="rightContain" onclick="dropTopBenzAbout()">
+          <p class="buttontxt">Make an Impact</p>
+          </div>
+      </span>
+      <span id="aboutScreen">
+        <div id="left2Contain">
+          <img id="firstGood" src="http://www.prankmenot.com/images/26-03-2017/WFUYvK.png"/>
+          <img id="thirdGood" src="http://www.prankmenot.com/images/26-03-2017/Z28KFF.png"/>
+        </div>
+        <div id="right2Contain">
+          <h4 class="info1heading">About <i>Online Harassment</i></h1>
+            <p class="info1">	The internet is an incredible platform for talking with friends, developing cool things,
+          and for spending a vast number of hours watching Netflix. However, Some use the internet to spread hatred and unkind words.
+           Respect others the way that you would like to be respected. If you see someone be harassed,<span class="action"> Take Action </span>. For more info, go to
+            <a  class="lkz" href= "http://www.hackharassment.com/">HackHarassment.</a></p>
+        </div>
+      </span>
+      <span id="StatsScreen">
+        <div id ="leftStatsContain" >
+          <h3 class="leftStatsContain">Statistics</h3>
+          <ul class="leftStatsContain">
+            <li class="leftStatsContain">"Fully 73% of adult internet users have seen someone be harassed in some way online and 40% have personally experienced it."<a class="leftStatsContain" href= "http://www.pewresearch.org/">(Pew Research Center)</a></li>
+            <li class="leftStatsContain">"Among those who have experienced online harassment, 60% decided to ignore their most recent incident while 40% took steps to respond to it."<a class="leftStatsContain" href= "http://www.pewresearch.org/">(Pew Research Center)</a></li>
+            <li class="leftStatsContain">"In a 2012 survey, 89 percent of local domestic violence programs reported that victims were experiencing
+               intimidation and threats by abusers via technology, including through cell phones, texts, and email."<a class="leftStatsContain" href= "http://nnedv.org/">(NNEDV)</a></li>
+            <li class="leftStatsContain">"1 in 6 online teens say they have been contacted online by someone they did not know in a way that made them feel scared or uncomfortable."<a class="leftStatsContain" href= "http://www.pewresearch.org/topics/internet-activities/">(Pew Internet and American Life Project, 2013)</a></li>
+          </ul>
+        </div>
+        <div id="rightStatsContain" >
+          <h3 class="rightStatsContain">Selected Quotes</h3>
+          <ul class="rightStatsContain">
+            <li class="rightStatsContain">“I have been ridiculed for my religious and political beliefs.”<a class="rightStatsContain" href= "http://www.pewresearch.org/">(Pew Research Center)</a></li>
+            <li class="rightStatsContain">"They attack not only me, but my parents, my family, my friends. They say I’m a disgrace...,I still get those comments and I still deal with it every day.”"(Paige Spiranac, Pro Golfer)</li>
+            <li class="rightStatsContain">"No one, regardless of their identity, background or beliefs, should be subjected to harassment online."(Kesha, Singer)</li>
+            <li class="rightStatsContain">"People say sticks and stones may break your bones, but names can never hurt you, but that's not true. Words can hurt. They hurt me. Things were said to me that I still haven't forgotten." (Demi Lovato, Singer)</li>
+          </ul>
+        </div>
+      </span>
+      <span id="linksScreen">
+        <div id="leftLinksContain">
+          <h3 class="leftLinksContain">Helpful Links</h3>
+          <ul class="leftLinksContain">
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "http://www.hackharassment.com/">Hack Harassment</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "http://www.hackharassment.com/pledge/">Take the Hack Harassment Pledge</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "http://www.haltabuse.org/help/respond.shtml">Halt Abuse</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "https://www.psychologytoday.com/blog/living-between-worlds/201703/how-cope-the-trauma-online-harassment">How to cope with the Trauma of Online Harassment?</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "https://www.safehorizon.org/get-help/stalking/?utm_campaign=National&utm_source=ppc&utm_term=Stalking&gclid=CLe_xLHR9NICFZKIswodwDwAhg#overview/">Safe Horizon (Stalking Hotline)</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "https://www.cybercivilrights.org/ccri-crisis-helpline/">Cyber Civil Rights Hotline</a></li>
+            <li class="leftLinksContain"><a class="leftLinksContain" href= "http://www.refinery29.com/online-harassment-statistics-infographic">Reclaim your Domain</a></li>
+          </ul>
+        </div>
+      </span>
     </div>
   </body>
 </html>

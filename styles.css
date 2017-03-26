@@ -19,14 +19,40 @@
   width:100%;
   background-color: black;
   color:white;
-  text-align: center;
   height:100px;
   font-family: 'Josefin Slab', serif;
 }
 
-.title, .subtitle {
+#navLeft  {
+  display:inline-block;
+  width:33%;
+}
+
+.titleMain {
   padding-top:15px;
-  /*margin-left:50px;*/
+  text-align:center;
+  width:33%;
+  display:inline-block;
+}
+
+#navRight {
+  display:inline-block;
+  width:33%;
+}
+
+ul.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+  display:inline-block;
+}
+
+#about, #links, #statistics, #intro{
+  width:50%;
+  text-align:center;
 }
 
 .bottom-body {
@@ -85,13 +111,8 @@ a {
 }
 
 .topbar2 {
-  background-color:#7CDBD5;
-  color:#FBEA74;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.lk2 {
-  color:#FBEA74;
+  background-color:#ECECEA;
+  color:#558C89;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -105,8 +126,8 @@ a {
   border-radius:5%;
   display:inline-block;
   margin-top:10px;
-  background-color:	#7CDBD5;
-  color:#FBEA74;
+  background-color:#ECECEA;
+  color:#558C89;
   position:absolute;
   font-family: 'Montserrat', sans-serif;
 }
@@ -125,11 +146,91 @@ a {
   display:block;
   padding:10px 10px 10px 10px;
   text-align:center;
+  font-size:25px;
 }
 
 .info1{
   display:block;
   padding:10px 15px 10px 15px;
   clear:left;
-  font-size:20px;
+  font-size:23px;
+}
+
+.lkz {
+  color:#558C89;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lkz:hover, #about:hover, #links:hover, #statistics:hover, #intro:hover {
+  color:black;
+}
+
+#rightStatsContain, #leftStatsContain{
+  height:80%;
+  width:40%;
+  border-radius:5%;
+  display:inline-block;
+  margin-top:10px;
+  background-color:#ECECEA;
+  color:#558C89;
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  display:none;
+}
+
+#leftStatsContain{
+  left:100px;
+}
+
+#rightStatsContain{
+  right:100px;
+}
+
+h3.leftStatsContain, h3.rightStatsContain, h3.leftLinksContain{
+  text-align:center;
+  font-size:25px;
+}
+
+ul.leftStatsContain, ul.rightStatsContain, ul.leftLinksContain{
+  font-size:18px;
+}
+
+li.leftStatsContain, li.rightStatsContain, li.leftLinksContain{
+  margin:10px;
+}
+
+a.leftStatsContain, a.rightStatsContain, a.leftLinksContain{
+  font-family: 'Montserrat', sans-serif;
+  color:#558C89;
+  font-size:18px;
+}
+
+#leftLinksContain{
+  height:80%;
+  width:40%;
+  border-radius:5%;
+  display:inline-block;
+  margin-top:10px;
+  background-color:#ECECEA;
+  color:#558C89;
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  display:none;
+}
+
+#leftLinksContain{
+  left:100px;
+}
+
+li.leftLinksContain{
+  display:inline-block;
+  width:100%;
+}
+
+#special{
+  color:#D9853B;
+}
+
+.action{
+  color:#D9853B;
 }
